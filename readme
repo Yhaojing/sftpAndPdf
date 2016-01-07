@@ -1,0 +1,50 @@
+java 读取properties文件
+
+********ReadProperties.java*************
+
+1)
+加载类的地方-包外
+InputStream inputStream = ReadProperties.class.getClassLoader().getResourceAsStream("sftp_file_config.properties");
+加载类的地方-包内
+ReadProperties.class.getResourceAsStream
+加载类的地方-工程的根目录下
+new FileInputStream()
+
+对于静态代码块中不可以使用this.getClass() (=ReadProperties.class)
+2)
+利用java.utils.properties,获取内容
+Properties properties = new Properties();
+3)
+从输入字节流中获取
+properties.load(inputStream);
+4)
+属性列表中指定键的属性值
+properties.getProperty("key");
+
+sftp 使用jsch包
+
+*************Sftp.java*************
+
+使用加密传输认证信息和传输数据,十分安全,但传输效率低.
+1)
+首先登陆sftp服务器
+sftp -oPart=22 testuser@11.11.11(默认端口是22)
+2)
+java程序实现连接,关闭,以及相关的下载上传操作
+connect()
+put()
+get()
+disconnect()
+
+根据pdf模板用itext生成PDF
+**********BuildPdf.java*************
+1)
+word生成pdf
+2)
+下载abobe acrobat x pro
+创建PDF表单
+3)
+java 程序动态生成PDF,(若要中文则要导入simsun.ttf)
+
+
+

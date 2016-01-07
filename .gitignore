@@ -1,0 +1,17 @@
+.DS_Store
+.idea/
+node_modules/
+bower_components/
+npm-debug.log
+src/main/webapp/static/web/assets/test/
+src/main/webapp/static/web/test/
+*.iml
+/target
+test/
+
+/bin
+.springBeans
+bower_components/
+rebel.xml
+src/main/webapp/static/assets/img/product/.DS_Store
+target/
