@@ -43,7 +43,7 @@ public class BuildPdf {
 
     public static void main(String[] args) throws IOException, DocumentException {
         BuildPdf b = new BuildPdf();
-        b.buildPdf("郝晶", "2016/01/07");
+        b.buildPdf("郝晶", "2016/01/00");
     }
 
 }
